@@ -104,7 +104,7 @@ const CategoryPage = () => {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
 
             {categories?.length > 0 && categories.map(category => (
-              <div className='flex flex-row items-center justify-between bg-gray-200 px-4 py-2 rounded-lg'>
+              <div className='flex flex-row items-center justify-between bg-gray-200 px-4 py-2 rounded-lg' key={category._id}>
 
                 <span className='text-xl font-bold capitalize outfit'>
                   {category.name}
