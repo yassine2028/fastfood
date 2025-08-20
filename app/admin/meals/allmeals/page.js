@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from 'react'
 import EditingForm from '../../../../components/EditingPopUp'
 import { toast } from 'react-hot-toast';
-import { Pen, ShoppingCart, Trash } from 'lucide-react';
+import { Pen,  Trash } from 'lucide-react';
 
-const page = () => {
+const Page = () => {
 
     const [meals, setMeals] = useState([]);
     const [editingMeal, setEditingMeal] = useState(null);
@@ -110,4 +110,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

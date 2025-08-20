@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import MenuItem from "../../../components/MenuItem";
 
-const page = () => {
+const Page = () => {
   const [categories, setCategories] = useState([]);
   const [menuItems, setMenuItems] = useState([]);
 
@@ -51,4 +51,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

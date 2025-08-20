@@ -1,10 +1,10 @@
 "use client"
 import React, { useContext, useState } from 'react'
 import { CartContext, cartProductPrice } from '../../../lib/AppContext'
-import { Mail, MapPin, Phone, Send, Trash2, User, Wallet } from 'lucide-react';
-import Image from 'next/image'
+import {  MapPin, Phone,  Trash2,  Wallet } from 'lucide-react';
 
-const page = () => {
+
+const Page = () => {
 
     const { cartProducts, removeCartProduct, clearCart } = useContext(CartContext);
     const [address, setAddress] = useState('');
@@ -198,4 +198,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
